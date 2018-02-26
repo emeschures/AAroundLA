@@ -1,0 +1,9 @@
+<h1>New Meeting</h1>
+
+<%= form_for @post do |f| %>
+
+    <%= f.text_field :title, placeholder: "Meeting Name" %>
+    <%= f.text_field :body, placeholder: "Meeting Address" %>
+    <%= f.submit "Submit" %>
+
+<% end %>
