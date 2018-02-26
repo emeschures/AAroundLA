@@ -9,12 +9,19 @@
   </head>
 
   <body>
-      <ul>
-          <li><%= link_to("Sign In", "/") %></li>
-          <li><%= link_to("Sign Up", "/") %></li>
-          <li><%= link_to("About", "/") %></li>          
-          <!-- <li><%= link_to("New Kitten", "/kittens/new", class: "btn btn-primary") %></li> -->
-        </ul>
+
+    <ul>
+      <li><% if logged_in? %>
+        <%= link_to "Logout", logout_path, {method: "DELETE"} %>
+      <% else %>
+        <%= link_to "Login", new_session_path %>
+      <% end %>  
+      </li>
+      <li><%= link_to("Sign Up", "/users/new") %></li>
+      <li><%= link_to("About", "/") %></li>          
+    </ul>
+
     <%= yield %>
+    
   </body>
 </html>
