@@ -9,23 +9,20 @@
   </head>
 
   <body>
-
+    <div id="navbar">
     <ul>
       <% if logged_in? %>
         <li><%= link_to "Logout", logout_path, {method: "DELETE"} %></li>
         <li><%= link_to "Add Meetings", new_meeting_path %></li>
         <li><%= link_to "Browse Meetings", meetings_path %></li>
-        
-        <% else %>
+      <% else %>
         <li><%= link_to("Sign Up", "/users/new") %></li>
         <li><%= link_to "Login", new_session_path %></li>
         
       <% end %>  
-      <li><%= link_to("HOME", "/") %></li>   
-    
-          
+      <li><%= link_to("HOME", "/") %></li>        
     </ul>
-
+    </div>
     <%= yield %>
     <div class="footer">
       <p>Created by Eli Meschures</p>

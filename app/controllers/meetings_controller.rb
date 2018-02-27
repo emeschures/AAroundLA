@@ -1,5 +1,6 @@
 class MeetingsController < ApplicationController
-  before_action :authorize, except: [:index, :show]
+  before_action :authorize_meeting_view, only: :edit
+
 
   def index
     @meetings = Meeting.all
@@ -20,9 +21,16 @@ class MeetingsController < ApplicationController
   end
 
   def edit
+    @meeting = Meeting.find(params[:id])
   end
 
   def update
+    @meeting = Meeting.find(params[:id])
+    if @meeting.update(meetings_params)
+      redirect_to meeting_path
+    else
+      redirect_to meeting_path(@meeting.id)
+    end 
   end
 
   def destroy
@@ -30,6 +38,13 @@ class MeetingsController < ApplicationController
     @meeting.destroy
     redirect_to "/"
   end
+
+  def authorize_meeting_view
+    @meeting = Meeting.find(params[:id])
+    if @meeting.user_id != current_user.id
+      redirect_to meetings_path
+    end
+  end 
 
   private
   def meetings_params

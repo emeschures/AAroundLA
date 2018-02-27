@@ -1,2 +1,7 @@
-<h1>Meetings#edit</h1>
-<p>Find me in app/views/meetings/edit.html.erb</p>
+<%= form_for @meeting do |f| %>
+
+    <%= f.text_field :name, placeholder: "Meeting Name" %>
+    <%= f.text_field :address, placeholder: "Meeting Address" %>
+    <%= f.submit "Submit" %>
+
+<% end %>
