@@ -11,17 +11,24 @@
   <body>
 
     <ul>
-      <li><% if logged_in? %>
-        <%= link_to "Logout", logout_path, {method: "DELETE"} %>
-      <% else %>
-        <%= link_to "Login", new_session_path %>
+      <% if logged_in? %>
+        <li><%= link_to "Logout", logout_path, {method: "DELETE"} %></li>
+        <li><%= link_to "Add Meetings", new_meeting_path %></li>
+        <li><%= link_to "Browse Meetings", meetings_path %></li>
+        
+        <% else %>
+        <li><%= link_to("Sign Up", "/users/new") %></li>
+        <li><%= link_to "Login", new_session_path %></li>
+        
       <% end %>  
-      </li>
-      <li><%= link_to("Sign Up", "/users/new") %></li>
-      <li><%= link_to("About", "/") %></li>          
+      <li><%= link_to("HOME", "/") %></li>   
+    
+          
     </ul>
 
     <%= yield %>
-    
+    <div class="footer">
+      <p>Created by Eli Meschures</p>
+    </div>
   </body>
 </html>

@@ -1,2 +1,24 @@
 @import "bootstrap";
+html, body {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+body {
+    background-image: url('https://i1.wp.com/aaagnostica.org/wp-content/uploads/2015/09/membership.jpg?fit=750%2C315&ssl=1i0.wp.com/aamadawaskavalley.org/wp-content/uploads/2017/01/AA-Logo-512-512.jpg?fit=512%2C512.https://i0.wp.com/aamadawaskavalley.org/wp-content/uploads/2017/01/AA-Logo-512-512.jpg?fit=512%2C512.org/wp-content/uploads/2013/03/AA-Logo.jpg');
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center bottom;
+    background-size: 100%;
+    color: white; 
+}
 
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: black;
+    color: white;
+    text-align: right;
+}
