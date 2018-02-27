@@ -9,6 +9,7 @@ class MeetingsController < ApplicationController
 
   def show
     @meeting = Meeting.find(params[:id])
+    @user = User.find @meeting.user_id
   end
 
   def new

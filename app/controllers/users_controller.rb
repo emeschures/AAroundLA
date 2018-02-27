@@ -17,6 +17,7 @@ class UsersController < ApplicationController
       session[:user_id] = @user.id
       redirect_to user_path @user.id
     else
+      flash[:warning] = "Check your email and password"
       redirect_to new_user_path
     end
   end
