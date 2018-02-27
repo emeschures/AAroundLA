@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_action :verify_current_user, only: [:show]
   def index
   end
 
@@ -32,6 +33,9 @@ class UsersController < ApplicationController
   
   private
   def user_params
-  params.require(:user).permit(:name, :email, :password, :password_confirmation)
+    params.require(:user).permit(:name, :email, :password, :password_confirmation)
   end 
+  def verify_current_user
+    redirect_to user_path(current_user.id) unless params[:id].to_i == current_user.id
+  end
 end

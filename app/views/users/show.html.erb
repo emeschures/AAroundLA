@@ -1,3 +1,7 @@
 <h3>Welcome <%= @user.name %>!</h3>
 
-
+<ul>
+    <% @user.meetings.each do |m| %>
+        <li><%= link_to(m.name, meeting_path(m.id)) %></li>
+    <% end %>
+</ul>
