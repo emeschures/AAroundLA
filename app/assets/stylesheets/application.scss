@@ -38,7 +38,7 @@ li {
 #accordion {
     color: lightgrey;
     margin: 0 auto;
-    max-width: 30%;
+    max-width: 35%;
 }
  .card-body {
      background-color: black;
@@ -48,10 +48,13 @@ li {
      background-color: black;
  }
 
- #new_meeting, #edit_meeting_6 {
+ #new_meeting {
      margin: 0 auto;
      max-width: 30%;
  }
 
-
+.edit_meeting {
+    margin: 0 auto;
+    max-width: 30%;
+}
  
