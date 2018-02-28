@@ -11,8 +11,8 @@ body {
     background-color: black;
     background-position: center bottom;
     background-size: 100%;
-    color: white; 
-    font-family: cursive;
+    color: grey; 
+    font-family: 'Poiret One', cursive;
 }
 
 .footer {
@@ -23,7 +23,6 @@ body {
     background: black;
     color: white;
     text-align: center;
-    font-family: fantasy;
 }
 
 #navbar ul {
@@ -33,14 +32,19 @@ body {
     list-style-type: none;
     text-align: center;
     background-color: black;
-    font-family: fantasy;
 }
 
 #navbar li {
     display: inline;
     margin: 10px;
     font-size: 20px;
-    font-family: cursive;
-    font-family: fantasy;
 }
 
+li {
+    list-style-type: none;
+}
+
+#accordion {
+    color: grey;
+    background-color: black;
+}
