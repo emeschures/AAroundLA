@@ -11,18 +11,9 @@ body {
     background-color: black;
     background-position: center bottom;
     background-size: 100%;
+    background-size: 1700px 350px;
     color: grey; 
     font-family: 'Poiret One', cursive;
-}
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background: black;
-    color: white;
-    text-align: center;
 }
 
 #navbar ul {
@@ -46,6 +37,8 @@ li {
 
 #accordion {
     color: lightgrey;
+    margin: 0 auto;
+    max-width: 30%;
 }
  .card-body {
      background-color: black;
@@ -54,3 +47,11 @@ li {
  .card-header {
      background-color: black;
  }
+
+ #new_meeting, #edit_meeting_6 {
+     margin: 0 auto;
+     max-width: 30%;
+ }
+
+
+ 
