@@ -1,7 +1,6 @@
 <h1>Find AA Meeting</h1>
 
 <% @meetings.each do |m| %>
-    <%# if m.user.id == current_user.id %>
-        <li><%= link_to("#{m.name}, #{m.address}", meeting_path(m.id)) %></li>
+    <li><%= link_to("#{m.name}, #{m.address}", meeting_path(m.id)) %></li>
 <% end %>
 
