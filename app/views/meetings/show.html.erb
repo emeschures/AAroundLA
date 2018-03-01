@@ -1,4 +1,7 @@
 <!-- <h4>Thank you for your contribution!</h4> -->
+<% if !logged_in? %>
+    <% redirect_to new_session_path %>
+<% end %>
 
 <h1><%= @meeting.name %></h1>
 <h2><%= @meeting.address %></h2>

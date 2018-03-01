@@ -3,4 +3,3 @@
 <% @meetings.each do |m| %>
     <li><%= link_to("#{m.name}, #{m.address}", meeting_path(m.id)) %></li>
 <% end %>
-

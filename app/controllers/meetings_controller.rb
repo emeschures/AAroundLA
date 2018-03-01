@@ -1,6 +1,6 @@
 class MeetingsController < ApplicationController
   before_action :authorize_meeting_view, only: :edit
-
+  before_action :authorize, only: [:show]
 
   def index
     @meetings = Meeting.all
