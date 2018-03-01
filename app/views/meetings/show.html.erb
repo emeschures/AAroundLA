@@ -2,7 +2,13 @@
 
 <h1><%= @meeting.name %></h1>
 <h2><%= @meeting.address %></h2>
-
+<iframe id="google-maps"
+  width="400"
+  height="400"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDYzCYV-ftuNMqm6oKfaG0ZmTjOrbDU08c&q=<%= @meeting.address %>" allowfullscreen>
+</iframe>
+<br>
 <%# check to see if meeting was created by the current user. if so, show an edit button %>
 <% if @meeting.user == current_user %>
     <%= link_to "Edit Meeting", edit_meeting_path(@meeting.id) %>
@@ -30,3 +36,5 @@
           </div>
         </div>
       </div>
+      
+<!-- AIzaSyDYzCYV-ftuNMqm6oKfaG0ZmTjOrbDU08c -->
