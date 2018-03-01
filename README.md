@@ -6,6 +6,9 @@ My goal for this project was to give users a quick and easy way to look up and f
 
 The program provided by Alcoholics Anonymous (AA) to help their members stay sober is very comprehensive, yet most members will claim a major key to their success (or failure) is in attending meetings. The challenge of getting and staying sober is impossible to do on your own. Alcoholism/addiction is a disease of loneliness and isolation; meetings overcome that and provide the opportunity to connect with people. They are instrumental in helping keep one sober and preventing relapse.
 
+Link to page:
+<https://aaroundla.herokuapp.com/>
+
 ### Technical Requirements
 + Have at least 2 models (more if they make sense) – one representing someone using your application, and at least one more that represents the main functional idea for your app.
 + Include sign up/log in functionality, with authentication. Implement basic authorization by restricting access to certain features, such as editing and deleting a resource, to an authenticated user.
