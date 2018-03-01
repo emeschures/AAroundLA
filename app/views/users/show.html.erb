@@ -1,5 +1,5 @@
 <h1>Welcome <%= @user.name %>!</h1>
-
+<h4>Meetings you have added:</h4>
 <ul>
     <% @user.meetings.each do |m| %>
         <li><%= link_to(m.name, meeting_path(m.id)) %></li>
