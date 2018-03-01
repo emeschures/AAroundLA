@@ -30,7 +30,7 @@ Link to page:
 
 
 ### Challenges
-+ Association and syntax between multiple models (belongs-to, has-many).
++ Association and syntax between multiple models (`belongs_to`, `has_many`).
 + Applying Bootstrap was more difficult than I expected.
 
 ### Future Add ons
