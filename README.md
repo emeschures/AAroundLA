@@ -1,5 +1,5 @@
 # AAroundLA
--
+----
 
 ### Overview
 My goal for this project was to give users a quick and easy way to look up and find an AA meeting in their area.
