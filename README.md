@@ -16,8 +16,8 @@ Link to my Trello board:
 + Ruby on Rails
 + Heroku
 + Bootstrap
-+ HTML
-+ CSS
++ HTML5
++ CSS3
 
 ### User Stories
 + As a visitor to the webpage, I want to view meetings in the area.
