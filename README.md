@@ -12,14 +12,6 @@ Link to webpage:
 Link to my Trello board:
 <https://trello.com/b/xYG7q3zn>
 
-### Technical Requirements
-+ Have at least 2 models (more if they make sense) – one representing someone using your application, and at least one more that represents the main functional idea for your app.
-+ Include sign up/log in functionality, with authentication. Implement basic authorization by restricting access to certain features, such as editing and deleting a resource, to an authenticated user.
-+ Have complete RESTful routes for at least one of your resources with GET, POST, PUT/PATCH, and DELETE.
-+ Have full CRUD for at least one of your resources.
-+ Have semantically clean HTML and CSS.
-+ Be deployed online (Heroku) and accessible to the public.
-
 ### Technology Used:
 + Ruby on Rails
 + Heroku
