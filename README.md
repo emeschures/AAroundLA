@@ -14,9 +14,9 @@ Link to my Trello board:
 
 ### Technology Used:
 + Ruby on Rails
-+ Heroku
 + Postgresql
 + Bootstrap
++ Heroku
 + HTML5
 + CSS3
 
